@@ -2,17 +2,18 @@
 #include <time.h>
 #include <stdio.h>
 /**
-   *main-program entry point.
+   *main - Print the last digit of a rand.
+   * and whelther is greater than 5, less.
     *
-     *Return:0 if no error, non-zero value if error.
+     *Return: Alway 0. 
       */
 int main(void)
 {
 		int n;
 			int  ldigit;
 srand(time(0));
-					n = rand() - RAND_MAX / 2;
-						ldigit = n % 10;
+	n = rand() - RAND_MAX / 2;
+				ldigit = n % 10;
 							if (ldigit > 5)
 									{
 printf("Last digit of %d is %d and is greater than 5\n", n, ldigit);
